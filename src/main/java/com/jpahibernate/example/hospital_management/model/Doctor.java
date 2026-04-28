@@ -31,5 +31,8 @@ public class Doctor {
     @Column(name="specialization", nullable = false)
     private String specialization;
 
+    @Column(name="mobile", nullable = false, unique = true) // unique=true - it cannot contain duplicated value but can contain null value
+    private String mobile;
+
 
 }
